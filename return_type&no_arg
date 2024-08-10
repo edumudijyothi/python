@@ -1,0 +1,23 @@
+#!.function with return type and No arguments
+def get_greeting():
+    return "Hello"
+message=get_greeting()#function calling
+print(message)#Outputs:Hello
+
+#2.Function with RETURN TYPE AND argument#driver codes
+def add(a,b):
+    return a+b
+result=add(3,5)#function calling
+print(result)#8
+
+
+#3.function with arguments and without return type
+def print_greeting(name):
+    print(f"Hello{name}!")
+print_greeting("jyoo")
+
+#4.function without arguments and without return type
+def multiply():
+    print("hello")
+multiply()   
+
