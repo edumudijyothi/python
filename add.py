@@ -7,3 +7,6 @@ for i in num:
        #sum is: 60
         #sum is: 138
         #sum is: 217
+"""Input:  1234
+Steps:  1+2+3+4 = 10
+Output: sum is: 10""""
