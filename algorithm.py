@@ -1,8 +1,9 @@
 num=23451
 total_sum=0
 while num>0:
-  total_sum+=num%10
-  num//=10#return the last value
+  total_sum+=num%10# get the last digit
+  num //= 10              # remove the last digit
+
 
 print(total_sum) 
 """"Explanation (step by step):
@@ -37,3 +38,4 @@ num //= 10 → 0 (loop ends)
 ✅ Final Result:
 total_sum = 15
 """
+
