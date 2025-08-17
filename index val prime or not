@@ -1,0 +1,20 @@
+def is_prime(n):
+    if n<2:
+        return False
+    for i in range(2,int(n**0.5)+1):
+        if(n%i==0):
+            return False
+    return True
+num=[9,5,3,29,3,19]
+index=int(input("Enter index:"))
+if index<len(num):
+    value=num[index]
+    if is_prime(value):
+        print(f"the index is {index} and num {value}:prime")
+    else:    
+        print(f"the index is {index} and num {value}:Not prime")
+else:
+    print("invaild index")
+       
+'''Enter index: 3
+The index is 3 and num 29: Prime'''
