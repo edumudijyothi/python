@@ -1,0 +1,16 @@
+def is_prime(n):
+    if n<2:
+        return False
+    for i in range(2,int(n**0.5)+1):
+        if(n%i==0):
+            return False
+    return True
+m=int(input("val:"))
+if is_prime(m):
+    print("prime")
+else:
+    print("Not prime")
+'''9**0.5 = 3.0 for checking the value of tables by the off values 0.5=1/2 then 9pow2=3'''        
+
+'''val:61
+prime'''
