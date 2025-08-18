@@ -1,0 +1,21 @@
+def is_prime(n):
+    if n<2:
+        return False
+    for i in range(2,int(n**0.5)+1):
+        if(n%i==0):
+            return False
+    return True
+num=list(map(int, input("separate the each in space:").split()))
+index=int(input("index val:"))
+
+if 0<=index<len(num):
+    value=num[index]
+    if is_prime(value):
+        print(f"the index {index} and {value}: prime")
+    else:
+        print(f"the index {index} and {value}: not prime")
+else:
+    print("invalid index")
+'''separate the each in space:2 3 1 4 5 
+index val:3
+the index 3 and 4: not prime'''
