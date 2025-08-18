@@ -1,0 +1,17 @@
+num=list(map(int, input("enter values:").split()))
+index=int(input("index val:"))
+if 0<=index<len(num):
+    value=num[index]
+    if  value%2==0:
+        print(f"the index {index} and {value}:even")
+    else:
+        print(f"the index {index} and {value}:odd")
+else:
+    Print("invalid index")
+''''enter values:4 56 2 1 6 
+index val:3
+the index 3 and 1:odd
+enter values:4 56 2 1 6
+index val:2
+the index 2 and 2:even'''
+        
